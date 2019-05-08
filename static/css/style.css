@@ -1,0 +1,22 @@
+.item-block {
+  display: inline-block;
+  width: 49%;
+  margin: 15px auto 25px auto;
+  text-align: center;
+  height: 200px;
+}
+.center {
+  object-fit: cover;
+}
+.menu-setion {
+}
+
+@media (max-width: 1024px) {
+  footer {
+    background: #fff;
+  }
+}
+.red-content h4 {
+  width: 100%;
+  text-align: right;
+}

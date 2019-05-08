@@ -1,26 +1,29 @@
-import React from 'react'
-import { Container, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap'
+import React from 'react';
 // import Link from 'gatsby-link'
 // import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+// import Layout from '../components/layout'
+import Header from '../components/header';
+import LatestProducts from '../components/latest_products';
+import AboutUs from '../components/about_us';
+import Products from '../components/products';
+import Testimonial from '../components/testimonial';
+import Footer from '../components/footer';
+import '../components/layout/index.scss';
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Container>
-          <Card style={{marginBottom: 10}}>
-            <CardBody>
-              <CardTitle>Hello</CardTitle>
-              <CardSubtitle style={{marginBottom: 10}}>Worlds</CardSubtitle>
-              <CardText>This is blank</CardText>
-            </CardBody>
-          </Card>
-      </Container>
-    </Layout>
-  )
-}
+    <>
+      <Header />
+      <LatestProducts />
+      <AboutUs />
+      <Products />
+      <Testimonial />
+      <Footer />
+    </>
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
 // export const pageQuery = graphql`
 //   query IndexQuery {

@@ -3,7 +3,6 @@ module.exports = {
     title: 'Gatsby Starter Blog',
     author: 'konsumer',
     authorLink: 'https://github.com/konsumer',
-    disqus: 'gatsby-starter-blog'// put your disqus ID here
   },
   plugins: [
     {
@@ -17,7 +16,6 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files'
         ]
       }
