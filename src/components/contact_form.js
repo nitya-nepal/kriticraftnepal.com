@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
+
 export default function contactform() {
   const [state, setState] = useState({
     isValidated: false,
@@ -9,7 +15,7 @@ export default function contactform() {
   });
 
   const handleChange = e => {
-    const { name: value } = e.target;
+    const { name, value } = e.target;
     setState(prevState => ({
       ...prevState,
       [name]: value,

@@ -8,7 +8,6 @@ import AboutUs from '../components/about_us';
 import Products from '../components/products';
 import Testimonial from '../components/testimonial';
 import Footer from '../components/footer';
-import '../components/layout/index.scss';
 
 const IndexPage = () => {
   return (
